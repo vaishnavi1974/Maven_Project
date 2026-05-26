@@ -21,6 +21,7 @@ import org.testng.annotations.Parameters;
 public class BaseClass {
 	public WebDriver driver;
 	public Properties p;
+	@SuppressWarnings("deprecation")
 	@BeforeClass
 	@Parameters({"os","browser"})
 	public void setup(String os, String br) throws IOException
